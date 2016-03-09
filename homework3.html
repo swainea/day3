@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+    <style type="text/css">
+
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        background-color: #45b4e8;
+      }
+
+      label{
+        font-family: Gill Sans; sans-serif;
+        color: #ffffff;
+        font-size: 12px;
+      }
+      select{
+        font-family: Gill Sans; sans-serif;
+        border: none;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      input{
+        font-family: Gill Sans; sans-serif;
+        border: none;
+        font-size: 12px;
+        margin-bottom: 10px;
+        padding: 5px;
+        background-color: white;
+        box-sizing: border-box;
+        width: 200px;
+      }
+      textarea{
+        font-family: Gill Sans; sans-serif;
+        color: white;
+        border: none;
+        font-size: 12px;
+        padding: 5px;
+        background-color: inherit;
+        border: 2px solid white;
+      }
+      .container{
+        width:90%;
+        margin: 0 auto;
+        margin-top: 10%;
+
+      }
+      .left{
+        float: left;
+        width: 30%;
+        /*margin-left: 5%;*/
+        /*margin-top: 10%;*/
+        min-width: 200px;
+      }
+      .center{
+        float: left;
+        width: 30%;
+        /*margin-top: 10%;*/
+        min-width: 200px;
+      }
+      .right{
+        float: left;
+        width: 30%;
+        /*margin-right: 5%;*/
+        /*margin-top: 10%;*/
+        min-width: 200px;
+      }
+      .clearfix::before, .clearfix::after {
+        content: " ";
+        display: table;
+      }
+
+      .clearfix::after {
+        clear: both;
+      }
+      .bottom{
+        display: block;
+        margin: 50px auto 0;
+        width: 100px;
+      }
+      .buttonSubmit{
+        width:50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form class="submit" action="http://requestb.in/10kmxgo1" method="post">
+      <div class="container">
+        <div class="left">
+            <label for="fname">FIRST NAME</label><br>
+            <input type="text" id="fname" name="firstname"><br>
+            <label for="lname">LAST NAME</label><br>
+            <input type="text" id="lname" name="lastname"><br>
+            <label for="email">EMAIL ADDRESS</label><br>
+            <input type="email" id="emailadd" name="emailadd"><br>
+            <label for="country">COUNTRY</label><br>
+            <select name="country">
+              <option value="United States">United States</option>
+              <option value="Botswana">Botswana</option>
+              <option value="Djibouti">Djibouti</option>
+            </select><br>
+            <label for="bio">BIOGRAPHY</label><br>
+            <textarea name="bio" rows="10" cols="30">Write your short biography here</textarea>
+        </div>
+
+        <div class="center">
+          <label for="tel">PHONE NUMBER</label><br>
+          <input type="number" id="phoneNum" name="phoneNum"><br>
+          <label for="affil">AFFILIATIONS</label><br>
+          <textarea name="affil" rows="10" cols="30">List your affiliations here</textarea><br>
+          <label for="occupation">OCCUPATION</label><br>
+          <select name="occupation">
+            <option value="madscientist">Mad Scientist</option>
+            <option value="catsitter">Cat Sitter</option>
+            <option value="crayontester">Crayon Tester</option>
+          </select><br>
+          <label for="catname">CAT'S NAME</label><br>
+          <input type="text" id="catname" name="catname"></p>
+          <label for="favgad">FAVORITE GADGET</label><br>
+          <input type="text" id="favgad" name="favgad"></p>
+        </div>
+
+        <div class="right">
+          <label for="talent">TYPE OF TALENT</label><br>
+          <select name="talent">
+            <option value="juggling">Juggling</option>
+            <option value="shape">Shapeshifting</option>
+            <option value="breathe">Breathing Underwater</option>
+          </select><br>
+          <label for="favdrink">FAVORITE DRINK</label><br>
+          <input type="text" id="favdrink" name="favdrink"><br>
+          <label for="spower">SPECIAL POWER</label><br>
+          <input type="text" id="spower" name="spower"><br>
+          <label for="weapon">WEAPON OF CHOICE</label><br>
+          <input type="text" id="weapon" name="weapon"><br>
+          <label for="comm">COMMENTS</label><br>
+          <textarea name="comm" rows="10" cols="30">Additional comments here</textarea>
+        </div>
+
+        <div class="clearfix"></div>
+        <div class="bottom">
+          <input type="submit" value="Submit" class="buttonSubmit">
+        </div>
+
+      </div>
+    </form>
+
+
+  </body>
+</html>
